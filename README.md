@@ -6,10 +6,11 @@ In this repository, misterteatime is about to provide solutions for the puzzles 
 
 ## Lösungen
 
-- [Tag 01](docs/Day01.md) *vollständig*
-- [Tag 02](docs/Day02.md) *noch nicht begonnen*
-- [Tag 03](docs/Day03.md) *noch nicht begonnen*
-- [Tag 04](docs/Day04.md) *vollständig*
+- [Tag 01](docs/Day01.md) **vollständig**
+- [Tag 02](docs/Day02.md) *vorbereitet*
+- [Tag 03](docs/Day03.md) *vorbereitet*
+- [Tag 04](docs/Day04.md) **vollständig**
+- [Tag 05](docs/Day05.md) *vorbereitet*
 
 If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
 
