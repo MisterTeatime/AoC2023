@@ -1,5 +1,21 @@
 fun main() {
+
     fun part1(input: List<String>): Int {
+        var seeds = listOf<Long>()
+
+        var parsingIndex = 0
+
+        for (line in input) {
+            when {
+                line.isBlank() -> parsingIndex += 1
+                !line[0].isDigit() -> continue
+                else -> {
+                    when (parsingIndex) {
+                        0 -> seeds = line.split(":").getOrNull(1)?.trim()?.split(" ")?.mapNotNull { it.toLongOrNull() } ?: listOf()
+                    }
+                }
+            }
+        }
         return input.size
     }
 
@@ -20,3 +36,5 @@ fun main() {
     println("Part 1: ${part1(input)}")
     println("Part 2: ${part2(input)}")
 }
+
+data class Mapping(val source : Long, val length : Long, val difference : Long)
