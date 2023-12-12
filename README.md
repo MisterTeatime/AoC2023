@@ -7,14 +7,16 @@ In this repository, misterteatime is about to provide solutions for the puzzles 
 ## Lösungen
 
 - [Tag 01](docs/Day01.md) **vollständig**
-- [Tag 02](docs/Day02.md) *vorbereitet*
-- [Tag 03](docs/Day03.md) *vorbereitet*
+- [Tag 02](docs/Day02.md) 
+- [Tag 03](docs/Day03.md) 
 - [Tag 04](docs/Day04.md) **vollständig**
-- [Tag 05](docs/Day05.md) *vorbereitet*
+- [Tag 05](docs/Day05.md) 
 - [Tag 06](docs/Day06.md) **vollständig**
-- [Tag 07](docs/Day07.md) *vorbereitet*
-- [Tag 08](docs/Day08.md) *vorbereitet*
-- [Tag 09](docs/Day09.md) *vorbereitet*
+- [Tag 07](docs/Day07.md) 
+- [Tag 08](docs/Day08.md) 
+- [Tag 09](docs/Day09.md) 
+- [Tag 10](docs/Day10.md) 
+- [Tag 11](docs/Day11.md) 
 
 If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
 
