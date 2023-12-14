@@ -18,6 +18,8 @@ In this repository, misterteatime is about to provide solutions for the puzzles 
 - [Tag 10](docs/Day10.md) 
 - [Tag 11](docs/Day11.md) 
 - [Tag 12](docs/Day12.md)
+- [Tag 13](docs/Day13.md)
+- [Tag 14](docs/Day14.md)
 
 If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
 
