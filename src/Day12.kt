@@ -33,10 +33,10 @@ fun main() {
                     index++
                 }
             }
-            possibleConfigs.add(configuration)
+            if (getHint(configuration) == hint)
+                possibleConfigs.add(configuration)
         }
-        val answer = possibleConfigs.filter { getHint(it) == hint }
-        return answer.size
+        return possibleConfigs.size
     }
 
     fun part1(input: List<String>): Int {
@@ -53,19 +53,31 @@ fun main() {
     }
 
     fun part2(input: List<String>): Int {
-        return input.size
-    }
+        val result = input.map { element ->
+            val (baseRow, hintString) = element.split(" ")
+            val baseHint = hintString.split(",").map { it.toInt() }
+
+            val row = (1..5).joinToString("?") { baseRow }
+            val hint = List(5) { baseHint }.flatten()
+
+            row.replace("#","1").replace(".", "0") to hint
+        }
+            .map { pair ->
+                countValidConfigurations(pair.first, pair.second)
+            }
+        return result.sum()    }
 
     // test if implementation meets criteria from the description, like:
     val testInput = readInput("Day12_test")
     val resultPart1 = part1(testInput)
     println("Test Part 1: $resultPart1")
     check(part1(testInput) == 21)
-//    val resultPart2 = part2(testInput)
-//    println("Test Part 2: $resultPart2")
-//    check(part2(testInput) == 1)
+
+    val resultPart2 = part2(testInput)
+    println("Test Part 2: $resultPart2")
+    check(part2(testInput) == 525152)
 
     val input = readInput("Day12")
     println("Part 1: ${part1(input)}")
-//    println("Part 2: ${part2(input)}")
+    println("Part 2: ${part2(input)}")
 }
