@@ -11,11 +11,11 @@ fun main() {
     val testInput = readInput("DayXX_test")
     val resultPart1 = part1(testInput)
     println("Test Part 1: $resultPart1")
-    check(part1(testInput) == 1)
+    check(resultPart1 == 1)
 
 //    val resultPart2 = part2(testInput)
 //    println("Test Part 2: $resultPart2")
-//    check(part2(testInput) == 1)
+//    check(resultPart2 == 1)
 
     val input = readInput("DayXX")
     println("Part 1: ${part1(input)}")
