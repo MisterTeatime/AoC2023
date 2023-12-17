@@ -48,7 +48,7 @@ fun main() {
 data class BeamStep (val x: Int, val y: Int, val direction: Direction)
 
 enum class Direction {
-    UP, RIGHT, DOWN, LEFT
+    UP, RIGHT, DOWN, LEFT;
 
     fun next(): Direction {
         val values = enumValues<Direction>()
